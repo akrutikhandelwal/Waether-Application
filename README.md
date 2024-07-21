@@ -20,9 +20,8 @@ This project is a Spring Boot application that integrates with the Weather API f
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/weather-forecast-api.git
-   cd weather-forecast-api
-
+   git clone https://github.com/akrutikhandelwal/Weather-Application.git
+ 
 2. **Configure Application Properties**:
 Update the src/main/resources/application.properties file with your RapidAPI credentials:
 
@@ -32,12 +31,12 @@ mvn spring-boot:run
 
 4. **Get Weather Forecast Summary**:
 
-curl --location 'http://localhost:8080/api/weather/summary/London' \
+curl --location 'http://localhost:8080/api/weather/summary/{cityName}' \
 --header 'clientid: 6779ef20e75817b79602' \
 --header 'x-auth-secret-key: secret'
 
 4. **Get Hourly Weather Forecast**:
-curl --location 'http://localhost:8080/api/weather/hourly/London' \
+curl --location 'http://localhost:8080/api/weather/hourly/{cityName}' \
 --header 'clientid: 6779ef20e75817b79602' \
 --header 'x-auth-secret-key: secret'
 
